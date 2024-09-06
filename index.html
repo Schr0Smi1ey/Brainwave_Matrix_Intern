@@ -39,8 +39,8 @@
             },
             fontFamily: {
               "google-sans": ["Google Sans", "sans-serif"],
-              poppins: ["Poppins", "sans-serif"],
-              volkhov: ["Volkhov", "serif"],
+              "poppins": ["Poppins", "sans-serif"],
+              "volkhov": ["Volkhov", "serif"],
               "open-sans": ["Open Sans", "sans-serif"],
             },
           },
@@ -108,7 +108,7 @@
             <div
               tabindex="0"
               role="button"
-              class="btn bg-white hover:bg-[#FFF1DA] py-1 border-none lg:hidden"
+              class="bg-white hover:bg-[#FFF1DA] p-1 rounded-xl border-none lg:hidden"
             >
               <img
                 src="images/icon/menu.svg"
@@ -177,7 +177,7 @@
               west hard for the.
             </p>
             <div
-              class="sm:w-[80%] lg:w-[80%] 2xl:w-[60%] flex sm:justify-between gap-2 md:gap-4"
+              class="sm:w-[80%] lg:w-[80%] 2xl:w-[60%] flex flex-wrap sm:justify-between gap-2 md:gap-4"
             >
               <button
                 class="bg-[#F1A501] p-1 py-1 sm:px-2 md:px-4 sm:py-1 md:py-3 font-medium text-sm md:text-lg text-white rounded-xl shadow-[0_2px_7px_0_#F1A501]"
@@ -185,7 +185,7 @@
                 Find out more
               </button>
               <div
-                class="border-2 border-orange-600 flex gap-2 md:gap-4 items-center"
+                class="border-2 border-orange-600 flex flex-wrap gap-2 md:gap-4 items-center"
               >
                 <i
                   class="fa-solid fa-play text-white p-2 md:p-4 bg-[#DF6951] rounded-full shadow-[0_2px_7px_0_#DF6951]"
@@ -204,7 +204,50 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main>
+      <!-- Catagory Section -->
+      <section class="md:container mx-auto md:my-10 lg:my-20 lg:bg-[url('images/colours.png')] bg-no-repeat bg-right-top">
+        <div class="text-center my-5 lg:mb-24">
+          <h2 class="font-poppins font-semibold text-sm md:text-base lg:text-lg text-[#5E6282] mb-3">CATEGORY</h2>
+          <h1 class="font-volkhov font-bold text-3xl md:4xl lg:text-5xl">We Offer Best Services</h1>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Card-1 -->
+            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
+              <img src="images/weather.png" alt="" class="p-2 border-2 border-orange-500">
+             </div>
+             <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Calculated Weather</h3>
+             <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">Built Wicket longer admire do barton vanity itself do in it.</p>
+            </div>
+            <!-- Card-2 -->
+            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
+              <img src="images/plane.png" alt="" class="p-2 border-2 border-orange-500">
+             </div>
+             <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Best Flights</h3>
+             <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">Engrossed listening. Park gate sell they west hard for the.</p>
+            </div>
+            <!-- Card-3 -->
+            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
+              <img src="images/event.png" alt="" class="p-2 border-2 border-orange-500">
+             </div>
+             <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Local Events</h3>
+             <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+            </div>
+            <!-- Card-4 -->
+            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
+              <img src="images/customization.png" alt="" class="p-2 border-2 border-orange-500">
+             </div>
+             <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Customization</h3>
+             <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">We deliver outsourced aviation services for military customers</p>
+            </div>
+          </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
