@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+    <!-- DaisyUI + TailWind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              "google-sans": ["Google Sans", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+              volkhov: ["Volkhov", "serif"],
+              "open-sans": ["Open Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fontawesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Raw CSS -->
+    <link rel="stylesheet" href="Styles/styles.css" />
+  </head>
+  <body>
+    <header
+      class="md:container mx-auto py-10 lg:bg-[#d5aee4] lg:bg-[url('images/Banner-bg.png')] lg:bg-right-top lg:bg-no-repeat"
+    >
+      <!-- Nabar Section -->
+      <nav
+        class="border-2 border-red-500 p-4 flex justify-between items-center gap-[20%]"
+      >
+        <div class="border-2 border-yellow-700">
+          <img src="images/Logo.png" alt="" class="w-full" />
+        </div>
+
+        <div class="justify-end flex items-center lg:mr-20">
+          <div class="flex-1">
+            <ul
+              class="font-google-sans font-medium text-lg flex justify-between items-center gap-4 xl:gap-8 2xl:gap-14"
+            >
+              <li class="hidden lg:flex nav-items">
+                <a href="">Desitnations</a>
+              </li>
+              <li class="hidden lg:flex nav-items">
+                <a href="">Hotels</a>
+              </li>
+              <li class="hidden lg:flex nav-items"><a href="">Flights</a></li>
+              <li class="hidden lg:flex nav-items"><a href="">Bookings</a></li>
+              <li class="hidden sm:flex nav-items"><a href="">Login</a></li>
+              <li class="hidden sm:flex">
+                <button
+                  class="bg-transparent border-2 border-black rounded-lg px-3 py-1"
+                >
+                  Sign up
+                </button>
+              </li>
+              <li class="hidden lg:flex">
+                <select class="bg-transparent focus:outline-none">
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="de">DE</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <!-- Dropdown Menu for Small Device -->
+          <div class="dropdown dropdown-left lg:hidden ml-5">
+            <!-- Menu Button -->
+            <div
+              tabindex="0"
+              role="button"
+              class="btn bg-white hover:bg-[#FFF1DA] py-1 border-none lg:hidden"
+            >
+              <img
+                src="images/icon/menu.svg"
+                alt="menubar"
+                class="w-6 md:w-8 h-6 md:h-8"
+              />
+            </div>
+            <!-- Menu -->
+            <ul
+              tabindex="0"
+              class="menu menu-xs dropdown-content bg-base-100 rounded-box z-[1] mt-4 sm:mt-14 p-1 shadow"
+            >
+              <!-- Main Navigation Links -->
+              <ul
+                class="space-y-1 font-normal text-sm md:text-base text-[#737373] hover:bg-[#292d259a] rounded-lg"
+              >
+                <li>
+                  <a>Desitnations</a>
+                </li>
+                <li>
+                  <a>Hotels</a>
+                </li>
+                <li>
+                  <a>Flights</a>
+                </li>
+                <li>
+                  <a>Bookings</a>
+                </li>
+                <li class="sm:hidden">
+                  <a>Login</a>
+                </li>
+                <li class="sm:hidden">
+                  <button
+                    class="hover:bg-white text-black border-[1px] border-black px-3 py-1 flex justify-around p-1 md:hidden text-left font-extrabold text-[10px] md:text-base rounded-full"
+                  >
+                    Sign up
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

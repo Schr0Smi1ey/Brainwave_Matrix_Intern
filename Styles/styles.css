@@ -1,0 +1,6 @@
+/* Nav Section */
+.nav-items:hover {
+  padding: 0.5rem;
+  border-radius: 12px;
+  background-color: #fff1da;
+}
