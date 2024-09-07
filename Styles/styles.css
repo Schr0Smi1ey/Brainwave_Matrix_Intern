@@ -1,8 +1,6 @@
-/* Nav Section */
-.nav-items:hover {
-  padding: 0.5rem;
+.btn-effect:hover {
   border-radius: 12px;
-  background-color: #fff1da;
+  background: linear-gradient(to right, #fff1da, #d5aee4);
 }
 
 @media screen and (max-width: 470px) {

@@ -64,13 +64,13 @@
   </head>
   <body>
     <header
-      class="md:container mx-auto py-5 md:pt-5 lg:pt-10 sm:bg-[#d5aee4] sm:bg-[url('images/Banner-bg-small.png')] lg:bg-[url('images/Banner-bg.png')] sm:bg-right-top sm:bg-no-repeat"
+      id="home" class="md:container mx-auto py-5 md:pt-5 lg:pt-10 sm:bg-[#d5aee4] sm:bg-[url('images/Banner-bg-small.png')] lg:bg-[url('images/Banner-bg.png')] sm:bg-right-top sm:bg-no-repeat"
     >
       <!-- Nabar Section -->
       <nav
-        class="border-2 border-red-500 p-2 lg:p-4 flex justify-between items-center gap-[20%] lg:mx-14"
+        class="p-2 lg:p-4 flex justify-between items-center gap-[20%] xl:mx-14"
       >
-        <div class="border-2 border-yellow-700">
+        <div class="btn btn-effect bg-transparent border-none focus:outline-none">
           <img src="images/Logo.png" alt="" class="w-full" />
         </div>
 
@@ -79,23 +79,23 @@
             <ul
               class="font-google-sans font-medium text-lg flex justify-between items-center gap-4 xl:gap-8 2xl:gap-14"
             >
-              <li class="hidden lg:flex nav-items">
+              <li class="hidden lg:flex btn-effect p-2">
                 <a href="">Desitnations</a>
               </li>
-              <li class="hidden lg:flex nav-items">
+              <li class="hidden lg:flex btn-effect p-2">
                 <a href="">Hotels</a>
               </li>
-              <li class="hidden lg:flex nav-items"><a href="">Flights</a></li>
-              <li class="hidden lg:flex nav-items"><a href="">Bookings</a></li>
-              <li class="hidden sm:flex nav-items"><a href="">Login</a></li>
-              <li class="hidden sm:flex">
+              <li class="hidden lg:flex btn-effect p-2"><a href="">Flights</a></li>
+              <li class="hidden lg:flex btn-effect p-2"><a href="">Bookings</a></li>
+              <li class="hidden sm:flex btn-effect p-2"><a href="">Login</a></li>
+              <li class="hidden sm:flex btn-effect">
                 <button
                   class="bg-transparent border-2 border-black rounded-lg px-3 py-1"
                 >
                   Sign up
                 </button>
               </li>
-              <li class="hidden lg:flex">
+              <li class="hidden lg:flex btn-effect p-2">
                 <select class="bg-transparent focus:outline-none">
                   <option value="en">EN</option>
                   <option value="fr">FR</option>
@@ -125,26 +125,26 @@
             >
               <!-- Main Navigation Links -->
               <ul
-                class="space-y-1 font-normal text-sm md:text-base text-[#737373] hover:bg-[#292d259a] rounded-lg"
+                class="space-y-1 font-normal text-sm md:text-base text-[#737373] rounded-lg"
               >
                 <li>
-                  <a>Desitnations</a>
+                  <a class="btn-effect">Desitnations</a>
                 </li>
                 <li>
-                  <a>Hotels</a>
+                  <a class="btn-effect">Hotels</a>
                 </li>
                 <li>
-                  <a>Flights</a>
+                  <a class="btn-effect">Flights</a>
                 </li>
                 <li>
-                  <a>Bookings</a>
+                  <a class="btn-effect">Bookings</a>
                 </li>
                 <li class="sm:hidden">
-                  <a>Login</a>
+                  <a class="btn-effect">Login</a>
                 </li>
                 <li class="sm:hidden">
                   <button
-                    class="hover:bg-white text-black border-[1px] border-black px-3 py-1 flex justify-around p-1 md:hidden text-left font-extrabold text-[10px] md:text-base rounded-full"
+                    class="btn-effect text-black border-[1px] border-black px-3 py-1 flex justify-around p-1 md:hidden text-left font-extrabold text-[10px] md:text-base rounded-full"
                   >
                     Sign up
                   </button>
@@ -157,9 +157,9 @@
 
       <!-- Banner Section -->
       <section class="md:container mx-auto mt-10">
-        <div class="border-2 border-red-400 flex flex-col sm:flex-row">
+        <div class="flex flex-col sm:flex-row">
           <div
-            class="border-2 border-green-500 lg:w-[75%] xl:w-[55%] 2xl:w-[50%] p-3 lg:p-10 xl:p-20 space-y-3 lg:space-y-5 xl:space-y-10"
+            class="lg:w-[75%] xl:w-[55%] 2xl:w-[50%] p-3 lg:p-10 xl:p-20 space-y-3 lg:space-y-5 xl:space-y-10"
           >
             <h2
               class="font-poppins font-bold text-lg md:text-xl text-[#DF6951]"
@@ -182,12 +182,12 @@
               class="sm:w-[80%] lg:w-[80%] 2xl:w-[60%] flex flex-wrap sm:justify-between gap-2 md:gap-4"
             >
               <button
-                class="bg-[#F1A501] p-1 py-1 sm:px-2 md:px-4 sm:py-1 md:py-3 font-medium text-sm md:text-lg text-white rounded-xl shadow-[0_2px_7px_0_#F1A501]"
+                class="p-1 py-1 btn-effect border-[0.5px] border-opacity-50 border-black sm:px-2 md:px-4 sm:py-1 md:py-3 font-medium text-sm md:text-lg text-black rounded-xl"
               >
-                Find out more
+                <a href="#find-more">Find out more</a>
               </button>
               <div
-                class="border-2 border-orange-600 flex flex-wrap gap-2 md:gap-4 items-center"
+                class="btn-effect rounded-xl p-1 flex flex-wrap gap-2 md:gap-4 items-center"
               >
                 <i
                   class="fa-solid fa-play text-white p-2 md:p-4 bg-[#DF6951] rounded-full shadow-[0_2px_7px_0_#DF6951]"
@@ -214,35 +214,35 @@
           <h1 class="font-volkhov font-bold text-3xl md:4xl lg:text-5xl">We Offer Best Services</h1>
         </div>
         <div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="bg-gray-50 rounded-2xl p-5 md:p-8 xl:p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <!-- Card-1 -->
-            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
-             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
-              <img src="images/weather.png" alt="" class="p-2 border-2 border-orange-500">
+            <div class="p-2 bg-white rounded-xl sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="flex justify-center w-1/2 mx-auto">
+              <img src="images/weather.png" alt="" class="p-2">
              </div>
              <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Calculated Weather</h3>
              <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
             <!-- Card-2 -->
-            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
-             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
-              <img src="images/plane.png" alt="" class="p-2 border-2 border-orange-500">
+            <div class="p-2 bg-white rounded-xl sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="flex justify-center w-1/2 mx-auto">
+              <img src="images/plane.png" alt="" class="p-2">
              </div>
              <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Best Flights</h3>
              <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">Engrossed listening. Park gate sell they west hard for the.</p>
             </div>
             <!-- Card-3 -->
-            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
-             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
-              <img src="images/event.png" alt="" class="p-2 border-2 border-orange-500">
+            <div class="p-2 sm:p-4 bg-white rounded-xl md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="flex justify-center w-1/2 mx-auto">
+              <img src="images/event.png" alt="" class="p-2">
              </div>
              <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Local Events</h3>
              <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
             </div>
             <!-- Card-4 -->
-            <div class="border-2 border-red-600 p-2 sm:p-4 md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
-             <div class="border-2 border-orange-500 flex justify-center w-1/2 mx-auto">
-              <img src="images/customization.png" alt="" class="p-2 border-2 border-orange-500">
+            <div class="p-2 sm:p-4 bg-white rounded-xl md:p-6 lg:p-8 text-center space-y-2 md:space-y-3 lg:space-y-4">
+             <div class="flex justify-center w-1/2 mx-auto">
+              <img src="images/customization.png" alt="" class="p-2">
              </div>
              <h3 class="font-open-sans font-semibold text-sm md:text-base lg:text-xl text-[#1E1D4C]">Customization</h3>
              <p class="lg:w-[60%] mx-auto font-poppins font-medium text-xs md:text-sm lg:text-base text-[#5E6282]">We deliver outsourced aviation services for military customers</p>
@@ -256,53 +256,89 @@
           <h2 class="font-poppins font-semibold text-sm md:text-base lg:text-lg text-[#5E6282] mb-3">Top Selling</h2>
           <h1 class="font-volkhov font-bold text-3xl md:4xl lg:text-5xl">Top Destinations</h1>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-gray-50 rounded-2xl p-5 md:p-8 xl:p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <!-- Place - 1 -->
-          <div class="border-2 border-green-600 p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
+          <div class="p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
             <img src="images/place-1.jpg" alt="" class="rounded-xl">
-            <div class="flex justify-between px-5 font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
+            <div class="flex justify-between font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
               <h2>Rome, Italty</h2>
               <h2>$5,42k</h2>
             </div>
-            <div class="flex gap-5 items-center px-5">
-              <i class="fa-solid fa-paper-plane"></i>
-              <h2>10 Days Trip</h2>
+            <div class="flex gap-5 items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>10 Days Trip</h2>
+              </div>
+              <div>
+                <button
+                class="btn-effect border-[0.5px] border-opacity-50 border-black px-2 py-1 font-medium text-sm md:text-base text-black rounded-xl"
+                >
+                Book Now
+                </button>
+              </div>
             </div>
           </div>
           <!-- Place - 2 -->
-          <div class="border-2 border-green-600 p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
+          <div class="p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
             <img src="images/place-2.jpg" alt="" class="rounded-xl">
-            <div class="flex justify-between px-5 font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
+            <div class="flex justify-between font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
               <h2>London, UK</h2>
               <h2>$4.2k</h2>
             </div>
-            <div class="flex gap-5 items-center px-5">
-              <i class="fa-solid fa-paper-plane"></i>
-              <h2>12 Days Trip</h2>
+            <div class="flex gap-5 items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>12 Days Trip</h2>
+              </div>
+              <div>
+                <button
+                  class="btn-effect border-[0.5px] border-opacity-50 border-black px-2 py-1 font-medium text-sm md:text-base text-black rounded-xl"
+                  >
+                  Book Now
+                </button>
+              </div>
             </div>
           </div>
           <!-- Place - 3 -->
-          <div class="border-2 border-green-600 p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
+          <div class="p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
             <img src="images/place-3.jpg" alt="" class="rounded-xl">
-            <div class="flex justify-between px-5 font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
+            <div class="flex justify-between font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
               <h2>Europe</h2>
               <h2>$15k</h2>
             </div>
-            <div class="flex gap-5 items-center px-5">
-              <i class="fa-solid fa-paper-plane"></i>
-              <h2>28 Days Trip</h2>
+            <div class="flex gap-5 items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>28 Days Trip</h2>
+              </div>
+              <div>
+                <button
+                  class="btn-effect border-[0.5px] border-opacity-50 border-black px-2 py-1 font-medium text-sm md:text-base text-black rounded-xl"
+                  >
+                  Book Now
+                </button>
+              </div>
             </div>
           </div>
           <!-- Place - 4 -->
-          <div class="border-2 border-green-600 p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
+          <div class="p-5 space-y-3 md:space-y-5 lg:space-y-7 bg-white rounded-xl">
             <img src="images/place-4.jpg" alt="" class="rounded-xl">
-            <div class="flex justify-between px-5 font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
+            <div class="flex justify-between font-poppins font-medium text-base lg:text-lg text-[#5E6282]">
               <h2>Switzerland</h2>
               <h2>$15k</h2>
             </div>
-            <div class="flex gap-5 items-center px-5">
-              <i class="fa-solid fa-paper-plane"></i>
-              <h2>10 Days Trip</h2>
+            <div class="flex gap-5 items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>10 Days Trip</h2>
+              </div>
+              <div>
+                <button
+                  class="btn-effect border-[0.5px] border-opacity-50 border-black px-2 py-1 font-medium text-sm md:text-base text-black rounded-xl"
+                  >
+                  Book Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -311,13 +347,13 @@
       <!-- Your Next Trip -->
       <section class="md:container mx-auto my-10 lg:my-20">
         <div class="grid grid-cols-1 lg:grid-cols-2">
-          <div class="border-2 border-red-600 font-poppins text-[#5E6282] p-10 space-y-3 md:space-y-5 lg:space-y-10">
+          <div class="font-poppins text-[#5E6282] p-10 space-y-3 md:space-y-5 lg:space-y-10">
             <h2 class="font-semibold text-base lg:text-lg text-[#5E6282]">Easy and Fast</h2>
-            <h1 class="font-volkhov font-bold text-4xl md:text-5xl text-black">Book your next trip<br>in 3 easy steps</h1>
-            <div class="border-indigo-600 border-2 space-y-3 md:space-y-5 lg:w-[90%] xl:w-[80%] 2xl:w-[70%]">
+            <h1 class="sm:w-[85%] 2xl:w-3/4 font-volkhov font-bold text-4xl md:text-5xl text-black">Book your next trip in 3 easy steps</h1>
+            <div class="bg-gray-50 rounded-xl p-3 space-y-3 md:space-y-5 lg:w-[90%] xl:w-[80%] 2xl:w-[70%]">
               <!-- Card - 1 -->
-              <div class="flex flex-col sm:flex-row gap-5 sm:gap-10">
-                <div class="border-2 border-blue-800 lg:w-[40%] xl:w-[30%] 2xl:w-[25%]">
+              <div class="bg-white rounded-lg p-2 flex flex-col sm:flex-row gap-5 sm:gap-10">
+                <div class="lg:w-[40%] xl:w-[30%] 2xl:w-[25%]">
                   <img src="images/destination.png" alt="" class="w-14 h-14 p-2 bg-[#F0BB1F] rounded-lg">
                 </div>
                 <div>
@@ -326,8 +362,8 @@
                 </div>
               </div>
               <!-- Card - 2 -->
-              <div class="flex flex-col sm:flex-row gap-10">
-                <div class="border-2 border-blue-800 lg:w-[40%] xl:w-[30%] 2xl:w-[25%]">
+              <div class="bg-white rounded-lg p-2 flex flex-col sm:flex-row gap-10">
+                <div class="lg:w-[40%] xl:w-[30%] 2xl:w-[25%]">
                   <img src="images/payment.png" alt="" class="w-14 h-14 p-2 bg-[#F15A2B] rounded-lg">
                 </div>
                 <div>
@@ -336,8 +372,8 @@
                 </div>
               </div>
               <!-- Card - 3 -->
-              <div class="flex flex-col sm:flex-row gap-10">
-                <div class="border-2 border-blue-800 lg:w-[40%] xl:w-[30%] 2xl:w-[25%]">
+              <div class="bg-white rounded-lg p-2 flex flex-col sm:flex-row gap-10">
+                <div class="lg:w-[40%] xl:w-[30%] 2xl:w-[25%]">
                   <img src="images/reach.png" alt="" class="w-14 h-14 p-2 bg-[#006380] rounded-lg">
                 </div>
                 <div>
@@ -347,8 +383,8 @@
               </div>
             </div>
           </div>
-          <div class="border-2 border-yellow-600 relative font-poppins flex justify-center items-center">
-            <div class="border-2 border-red-600 w-[80%] xl:w-[70%] 2xl:w-[60%] space-y-5 mx-auto p-5 font-medium text-base md:text-lg rounded-lg">
+          <div class="bg-gray-50 rounded-2xl relative font-poppins flex justify-center items-center">
+            <div class="bg-white rounded-xl w-[80%] xl:w-[70%] 2xl:w-[60%] space-y-5 mx-auto p-5 font-medium text-base md:text-lg">
               <img src="images/greece.jpg" alt="" class="w-full rounded-2xl">
               <h2 class="">Trip To Greece</h2>
               <h2 class="text-[#84829A]">14-29 June  ¦ By Sarafat Karim</h2>
@@ -363,7 +399,7 @@
               </div>
             </div>
 
-            <div class="hide absolute w-1/3 bottom-0 right-0 md:bottom-[5%] md:right-[5%] lg:bottom-[12%] lg:right-[-2%] xl:bottom-[5%] xl:right-[-2%] 2xl:bottom-[5%] 2xl:right-[8%] border-2 border-green-600 space-y-1 bg-gray-50 p-2 text-sm rounded-lg">
+            <div class="hide bg-white rounded-xl absolute w-1/3 bottom-0 right-0 md:bottom-[5%] md:right-[5%] lg:bottom-[12%] lg:right-[-2%] xl:bottom-[5%] xl:right-[-2%] 2xl:bottom-[5%] 2xl:right-[8%] space-y-1 p-2 text-sm">
               <h2 class="text-[#84829A]">Ongoing</h2>
               <div>
                 <img src="images/rome.jpg" alt="" class="w-[80px] h-[80px] rounded-[50%]">
@@ -381,7 +417,7 @@
       <!-- Testimonials -->
       <section class="md:container mx-auto my-10 lg:my-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div class="border-2 border-red-600 font-poppins text-[#5E6282] p-10 space-y-3 md:space-y-5 lg:space-y-10">
+          <div class="font-poppins text-[#5E6282] p-10 space-y-3 md:space-y-5 lg:space-y-10">
             <h2 class="font-semibold text-base lg:text-lg text-[#5E6282]">Testimonials</h2>
             <div><h1 class="font-volkhov font-bold text-4xl md:text-5xl text-black"><span class="leading-[65px]">What people say</span></samp><br>about Us.</h1></div>
             <div class="flex gap-8">
@@ -390,11 +426,11 @@
               <div class="w-5 h-5 rounded-full bg-[#c9a76f]"></div>
             </div>
           </div>
-          <div class="border-2 border-green-600">
-            <div class="carousel carousel-vertical rounded-box h-96">
-              <div id="slide1" class="border-2 border-orange-600 carousel-item bg-white shadow-lg relative h-full flex items-center">
-                <div class="relative w-3/4 ml-5 bg-white">
-                  <div class="border-2 border-red-600 relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
+          <div>
+            <div class="carousel carousel-vertical space-y-5 rounded-box h-96">
+              <div id="slide1" class="carousel-item bg-gray-50 rounded-xl shadow-lg relative h-full flex items-center">
+                <div class="relative w-3/4 ml-5 bg-white rounded-xl">
+                  <div class="bg-white rounded-xl relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
                     <p class="sm:w-[70%]">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                     <div>
                       <h1 class="font-miama text-xl font-bold">Mike taylor</h1>
@@ -404,7 +440,7 @@
                   <div class="absolute -top-5 -left-5"><img src="images/commenter1.jpg" alt="" class="p-1 w-14 h-14 sm:w-20 sm:h-20 rounded-full"></div>
                 </div>
                 <div
-                    class="absolute flex flex-col top-1/2 right-0 -translate-y-1/2 transform justify-between"
+                    class="absolute flex flex-col gap-2 mr-2 top-1/2 right-0 -translate-y-1/2 transform justify-between"
                   >
                     <a href="#slide4" class="btn btn-circle bg-white hover:bg-white border-none hover:border-none"
                       ><img
@@ -420,9 +456,9 @@
                     /></a>
                 </div>
               </div>
-              <div id="slide2" class="border-2 border-orange-600 carousel-item bg-white shadow-lg relative h-full flex items-center">
-                <div class="relative w-3/4 ml-5">
-                  <div class="border-2 border-red-600 relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
+              <div id="slide2" class="carousel-item bg-gray-50 rounded-xl shadow-lg relative h-full flex items-center">
+                <div class="relative w-3/4 ml-5 bg-white rounded-xl">
+                  <div class="relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
                     <p class="sm:w-[70%]">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                     <div>
                       <h1 class="font-miama text-xl font-bold">Mike taylor</h1>
@@ -432,7 +468,7 @@
                   <div class="absolute -top-5 -left-5"><img src="images/commenter2.png" alt="" class="p-1 w-14 h-14 sm:w-20 sm:h-20 rounded-full"></div>
                 </div>
                 <div
-                    class="absolute flex flex-col top-1/2 right-0 -translate-y-1/2 transform justify-between"
+                    class="absolute flex flex-col gap-2 mr-2 top-1/2 right-0 -translate-y-1/2 transform justify-between"
                   >
                     <a href="#slide1" class="btn btn-circle bg-white hover:bg-white border-none hover:border-none"
                       ><img
@@ -448,9 +484,9 @@
                     /></a>
                 </div>
               </div>
-              <div id="slide3" class="border-2 border-orange-600 carousel-item bg-white shadow-lg relative h-full flex items-center">
-                <div class="relative w-3/4 ml-5">
-                  <div class="border-2 border-red-600 relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
+              <div id="slide3" class="carousel-item bg-gray-50 rounded-xl shadow-lg relative h-full flex items-center">
+                <div class="relative w-3/4 ml-5 bg-white rounded-xl">
+                  <div class="relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
                     <p class="sm:w-[70%]">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                     <div>
                       <h1 class="font-miama text-xl font-bold">Mike taylor</h1>
@@ -460,7 +496,7 @@
                   <div class="absolute -top-5 -left-5"><img src="images/commenter3.png" alt="" class="p-1 w-14 h-14 sm:w-20 sm:h-20 rounded-full"></div>
                 </div>
                 <div
-                    class="absolute flex flex-col top-1/2 right-0 -translate-y-1/2 transform justify-between"
+                    class="absolute flex flex-col gap-2 mr-2 top-1/2 right-0 -translate-y-1/2 transform justify-between"
                   >
                     <a href="#slide2" class="btn btn-circle bg-white hover:bg-white border-none hover:border-none"
                       ><img
@@ -476,9 +512,9 @@
                     /></a>
                 </div>
               </div>
-              <div id="slide4" class="border-2 border-orange-600 carousel-item bg-white shadow-lg relative h-full flex items-center">
-                <div class="relative w-3/4 ml-5">
-                  <div class="border-2 border-red-600 relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
+              <div id="slide4" class="carousel-item bg-gray-50 rounded-xl shadow-lg relative h-full flex items-center">
+                <div class="relative w-3/4 ml-5 bg-white rounded-xl">
+                  <div class="relative space-y-5 pl-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
                     <p class="sm:w-[70%]">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                     <div>
                       <h1 class="font-miama text-xl font-bold">Mike taylor</h1>
@@ -488,7 +524,7 @@
                   <div class="absolute -top-5 -left-5"><img src="images/commenter4.png" alt="" class="p-1 w-14 h-14 sm:w-20 sm:h-20 rounded-full"></div>
                 </div>
                 <div
-                    class="absolute flex flex-col top-1/2 right-0 -translate-y-1/2 transform justify-between"
+                    class="absolute flex flex-col gap-2 mr-2 top-1/2 right-0 -translate-y-1/2 transform justify-between"
                   >
                     <a href="#slide3" class="btn btn-circle bg-white hover:bg-white border-none hover:border-none"
                       ><img
@@ -511,19 +547,19 @@
 
       <!-- Airlines Companies Section -->
       <section class="md:container mx-auto my-10 lg:my-14">
-      <div class="gap-4 flex flex-wrap justify-around items-center">
-        <div><img src="images/company-1.png" alt="" class="p-1"></div>
-        <div><img src="images/company-2.png" alt="" class="p-1"></div>
-        <div><img src="images/company-3.png" alt=""></div>
-        <div><img src="images/company-4.png" alt="" class="p-1 py-2"></div>
-        <div><img src="images/company-5.png" alt="" class="p-2 py-3"></div>
+      <div class="bg-gray-50 rounded-xl p-4 gap-4 flex flex-wrap justify-around items-center">
+        <div class="bg-white rounded-xl p-2"><img src="images/company-1.png" alt="" class="p-1"></div>
+        <div class="bg-white rounded-xl p-2"><img src="images/company-2.png" alt="" class="p-1"></div>
+        <div class="bg-white rounded-xl p-2"><img src="images/company-3.png" alt=""></div>
+        <div class="bg-white rounded-xl p-2"><img src="images/company-4.png" alt="" class="p-1 py-2"></div>
+        <div class="bg-white rounded-xl p-2"><img src="images/company-5.png" alt="" class="p-2 py-3"></div>
       </div>
       </section>
 
        <!-- Subscribe Section -->
-      <section class="font-poppins md:container relative mx-auto my-10 lg:my-20 border-2 border-indigo-600">
+      <section class="font-poppins md:container relative mx-auto my-10 lg:my-20">
         <div class="absolute -top-3 -right-3 z-10 bg-[#747DEF] p-2 rounded-3xl"><img src="images/send.png" alt="" class="w-10 h-10"></div>
-        <div class="bg-[#DFD7F9] relative overflow-hidden rounded-tl-[100px] p-10 md:p-14 lg:p-20">
+        <div class="bg-[#d5aee4] relative overflow-hidden rounded-tl-[100px] p-10 md:p-14 lg:p-20">
           <div class="hidden lg:flex absolute -bottom-[5%] -left-[2%]"><img src="images/subscribe-bg.png" alt="" class="opacity-10"></div>
           <div class="hidden lg:flex absolute -right-[3%] -bottom-[5%]"><img src="images/subscribe-bg.png" alt="" class="opacity-10 -rotate-90"></div>
           <div class="hidden lg:flex absolute bottom-0 right-0"><img src="images/colours.png" alt="" class="opacity-40"></div>
@@ -531,67 +567,77 @@
           <h1 class="mx-auto mb-10 md:mb-16 lg:mb-20 w-full lg:w-[80%] xl:w-[60%] font-semibold text-2xl md:text-3xl text-center text-[#5E6282]">Subscribe to get information, latest news and other interesting offers about Jadoo</h1>
           <div class="space-x-4 space-y-4 md:space-y-0 mx-auto text-center">
             <input type="email" placeholder="Your email" class="w-3/4 lg:w-1/2 xl:w-1/3 bg-white font-semibold p-4 pl-10 focus:outline-none rounded-lg">
-            <button class="bg-[#FF946D] p-4 px-6 rounded-lg">Subscribe</button>
+            <button class="bg-transparent btn-effect border-[0.5px] border-black border-opacity-50 p-4 px-6 rounded-lg font-semibold text-lg">Subscribe</button>
           </div>
         </div>
       </section>
     </main>
-    <footer class="md:container relative mx-auto mt-0-10 lg:mt-20 border-2 border-indigo-600">
-      <section class="font-poppins p-8 md:p-10 lg:p-12 xl:p-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6 xl:gap-8">
-        <div class="border-2 border-green-700 sm:col-span-2 lg:col-span-1 p-4 md:p-6 xl:p-10 space-y-4">
-          <h1 class="font-semibold text-5xl lg:text-4xl xl:text-5xl">Jadoo.</h1>
-          <p class="w-[80%] font-medium text-sm text-[#5E6282]">Book your trip in minute, get full Control for much longer.</p>
-        </div>
-        <div class="border-2 border-green-700 p-4 md:p-6 lg:p-8 xl:p-10 pt-3 space-y-4">
-          <h1 class="font-bold text-xl" >Company</h1>
-          <div class="font-medium text-base text-[#5E6282] space-y-4">
-            <h3>About</h3>
-            <h3>Careers</h3>
-            <h3>Phone</h3>
+    <footer id="find-more" class="md:container relative mx-auto mt-0-10 lg:mt-20">
+      <section class="font-poppins p-8 md:p-10 lg:p-12 xl:p-14">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6 xl:gap-8">
+          <div class="sm:col-span-2 lg:col-span-1 p-4 md:p-6 xl:p-10 space-y-4">
+            <h1 class="p-2 bg-transparent btn-effect border-none font-semibold text-5xl lg:text-4xl xl:text-5xl"><a href="#home">Jadoo.</a></h1>
+            <p class="xl:w-[90%] 2xl:w-[80%] font-medium text-sm text-[#5E6282] ml-2">Book your trip in minute, get full Control for much longer.</p>
           </div>
-        </div>
-        <div class="border-2 border-green-700 p-4 md:p-6 lg:p-8 xl:p-10 pt-3 space-y-4">
-          <h1 class="font-bold text-xl">Contact</h1>
-          <div class="font-medium text-base text-[#5E6282] space-y-4">
-            <h3>Help/FAQ</h3>
-            <h3>Press</h3>
-            <h3>Affilates</h3>
-          </div>
-        </div>
-        <div class="border-2 border-green-700 p-4 md:p-6 lg:p-8 xl:p-10 pt-3 space-y-4">
-          <h1 class="font-bold text-xl">More</h1>
-          <div class="font-medium text-base text-[#5E6282] space-y-4">
-            <h3>Airlinefees</h3>
-            <h3>Airline</h3>
-            <h3>Low fare tips</h3>
-          </div>
-        </div>
-        <div class="border-2 border-green-700 p-4 md:p-6 lg:p-8 pt-3 space-y-4">
-          <div class="flex flex-wrap gap-2">
-            <img src="images/facebook.png" alt="" class="p-1 bg-white w-10 h-10">
-            <img src="images/instagram.png" alt="" class="p-1 bg-white w-10 h-10">
-            <img src="images/twitter.png" alt="" class="p-1 bg-white w-10 h-10">
-          </div>
-          <h1 class="font-medium text-lg text-[#5E6282]">Discover our app</h1>
-          <div class="space-y-2">
-            <div class="w-[35%] sm:w-[60%] lg:w-full bg-black rounded-xl flex flex-wrap gap-2 items-center p-2">
-              <div><img src="images/play-store.png" alt="" class="w-8 h-8"></div>
-              <div class="text-white">
-                <h1 class="font-semibold text-sm">GET IT ON</h1>
-                <p class="font-[300] text-xs">GOOGLE PLAY</p>
-              </div>
-            </div>
-            <div class="w-[35%] sm:w-[60%] lg:w-full bg-black rounded-xl flex flex-wrap gap-2 items-center p-2">
-              <div>
-                <img src="images/apple.svg" alt="" class="w-8 h-8">
-              </div>
-              <div class="text-white">
-                <h1 class="font-normal text-[10px]">Available on the</h1>
-                <h1 class="font-extrabold text-xs">Apple Store</h1>
-              </div>
+          <div class="p-4 md:p-6 lg:p-8 xl:p-10 pt-3 space-y-4">
+            <h1 class="font-bold text-xl" >Company</h1>
+            <div class="font-medium text-base text-[#5E6282] space-y-4">
+              <div><a href=""><span class="btn-effect p-1">About</span></a></div>
+              <div><a href=""><span class="btn-effect p-1">Careers</span></a></div>
+              <div><a href=""><span class="btn-effect p-1">Phone</span></a></div>
             </div>
           </div>
+          <div class="p-4 md:p-6 lg:p-8 xl:p-10 pt-3 space-y-4">
+            <h1 class="font-bold text-xl">Contact</h1>
+            <div class="font-medium text-base text-[#5E6282] space-y-4">
+              <div><a href=""><span class="btn-effect p-1">Help/FAQ</span></a></div>
+              <div><a href=""><span class="btn-effect p-1">Press</span></a></div>
+              <div><a href=""><span class="btn-effect p-1">Affilates</span></a></div>
+            </div>
+          </div>
+          <div class="p-4 md:p-6 lg:p-8 xl:p-10 pt-3 space-y-4">
+            <h1 class="font-bold text-xl">More</h1>
+            <div class="font-medium text-base text-[#5E6282] space-y-4">
+              <div><a href=""><span class="btn-effect p-1">Airlinefees</span></a></div>
+              <div><a href=""><span class="btn-effect p-1">Airline</span></a></div>
+              <div><a href=""><span class="btn-effect p-1">Low fare tips</span></a></div>
+            </div>
+          </div>
+          <div class="p-4 md:p-6 lg:p-8 pt-3 space-y-4">
+            <div class="flex flex-wrap gap-2">
+              <a href="https://www.facebook.com/radiant.remel.5/" target="_blank"><img src="images/facebook.png" alt="" class="btn-effect p-1 bg-white w-10 h-10"></a>
+              <a href="https://www.linkedin.com/in/sarafat-karim/" target="_blank"><img src="images/linkedin.png" alt="" class="btn-effect p-1 bg-white w-10 h-10"></a>
+              <a href="https://github.com/Schr0Smi1ey" target="_blank"><img src="images/instagram.png" alt="" class="btn-effect p-1 bg-white w-10 h-10"></a>
+              <a href="https://x.com/sarafat_karim" target="_blank"><img src="images/twitter.png" alt="" class="btn-effect p-1 bg-white w-10 h-10"></a>
+            </div>
+            <h1 class="font-medium text-lg text-[#5E6282]">Discover our app</h1>
+            <div>
+              <a href="">
+                <div class="w-[35%] sm:w-[60%] lg:w-full bg-black hover:bg-black rounded-xl flex flex-wrap gap-2 justify-around items-center p-2">
+                  <div><img src="images/play-store.png" alt="" class="w-8 h-8"></div>
+                  <div class="text-white">
+                    <h1 class="font-semibold text-sm">GET IT ON</h1>
+                    <p class="font-[300] text-xs">GOOGLE PLAY</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <div class="w-[35%] sm:w-[60%] lg:w-full bg-black hover:bg-black rounded-xl flex flex-wrap gap-2 justify-around items-center p-2">
+                  <div>
+                    <img src="images/apple.svg" alt="" class="w-8 h-8">
+                  </div>
+                  <div class="text-white">
+                    <h1 class="font-normal text-[10px]">Available on the</h1>
+                    <h1 class="font-extrabold text-xs">Apple Store</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+        <h1 class="text-center mt-2">All rights reserved by <a href="https://www.linkedin.com/in/sarafat-karim/" target="_blank" class="font-bold font-miama text-2xl btn-effect p-2">Sarafat Karim</a></h1>
       </section>
     </footer>
   </body>
